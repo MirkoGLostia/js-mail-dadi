@@ -10,4 +10,86 @@
 
 
 
+
+
+/********
+ *HEADER*
+ ********/
+
+header {
+   background-color: blue;
+   color: red;
+   font-size: 40PX;
+   font-weight: 800;
+   text-align: center;
+   padding: 50px;
+}
+
+
+
+
+
+/******
+ *MAIN*
+ ******/
+
+#main-container {
+   background-color: green;
+   min-height: 100vh;
+   width: 100%;
+   text-align: center;
+}
+
+
+
+   /* trow the dice */
+
+   #gamble-start {
+      padding:50px ;
+   }
+
+   #submit {
+      padding: 10px;
+      color: brown;
+      font-weight: 700;
+   }
+
+
+   /* show user and pc value */
+
+   #container-game {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+      margin: 0 auto;
+   }
+
+   #container-game > div {
+      background-color: aqua;
+      padding: 40px;
+      border-radius: 20px;
+   }
+
+   #container-game span {
+      color: rgb(87, 16, 145);
+      padding: 30px;
+      font-size: 20px;
+      font-weight: 700;
+   }
+
+
+   /* winner */
+
+   #winner-section {
+      margin-top: 60px;
+   }
+   
+   #result-of-roll {
+      background-color: bisque;
+      font-size: 60px;
+      font-weight: 900;
+      border-radius: 20px;
+      color: rgb(187, 145, 7);
+      padding: 20px;
+   }
  
