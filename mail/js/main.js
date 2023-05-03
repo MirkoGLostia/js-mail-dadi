@@ -5,8 +5,7 @@ QUI ricordatevi che non è concesso usare altro oltre quello che abbiam visto og
 
 
 // variabili e array
-
-let prova;
+let prova, userMail;
 
 let inLista = -1;
 
@@ -15,48 +14,56 @@ const listaInvitati = ["deric.liz@mail.com", "mari.alv@mail.com", "jose.ferri@ma
 
 
 // ricezione dati da input bottone
+document.getElementById("submit").addEventListener("click", mailTest);
+
+function mailTest() {
+    
+    userMail = document.getElementById("user-mail").value;
+    
+    console.log(userMail);
 
 
 
     // debug
-
     prova = "carmine.kouli@mail.com";    
 
 
 
-// ciclare array
+    // ciclare array
+    for (let i = 0; i < listaInvitati.length; i++) {
 
-for (let i = 0; i < listaInvitati.length; i++) {
-
-    const mailInLista = listaInvitati[i];
-    
-    
-
-    // confronto dati array con dati input
-    
-    if (prova === mailInLista) {
-        // se c'è corrispondeza
+        const mailInLista = listaInvitati[i];
         
-        inLista = i;
+        
+
+        // confronto dati array con dati input
+        if (userMail === mailInLista) {
+
+            // se c'è corrispondeza
+            
+            inLista = i;
 
 
-        if (inLista >= 0) {
-            // output corrispondenza
-    
-    
-            // debug
-            console.log("vero");
-    
-        }
-    } 
-    
-}
+            if (inLista >= 0) {
+
+                // output corrispondenza
+        
+        
+                // debug
+                console.log("vero");
+        
+            }
+        } 
+        
+    }
 
 
 
-// se non c'è corrispondeza
-if (inLista === -1) {
-    console.log("false");
+    // se non c'è corrispondeza output messaggio
+    if (inLista === -1) {
+        
+        alert ("you are not invited");
+    }
 }
 
 
