@@ -14,9 +14,8 @@ const listaInvitati = ["deric.liz@mail.com", "mari.alv@mail.com", "jose.ferri@ma
 
 
 // ricezione dati da input bottone
-document.getElementById("submit").addEventListener("click", mailTest);
 
-function mailTest() {
+submit.onclick = function() {
     
     userMail = document.getElementById("user-mail").value;
     
@@ -46,10 +45,15 @@ function mailTest() {
 
             if (inLista >= 0) {
 
-                // output corrispondenza
+                // output in caso di corrispondenza
+                const messageCont = `"Congratulations, you are invited to the best party ever!!!!"`;
+
+                document.getElementById("positive-message").innerText = messageCont;
+
         
         
                 // debug
+                // Congratulations, you are invited to the best party ever!!!!
                 console.log("vero");
         
             }
