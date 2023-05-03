@@ -8,6 +8,8 @@ QUI ricordatevi che non è concesso usare altro oltre quello che abbiam visto og
 
 let prova;
 
+let inLista = -1;
+
 const listaInvitati = ["deric.liz@mail.com", "mari.alv@mail.com", "jose.ferri@mail.com", "franco.pess@mail.com", "carmine.kouli@mail.com", "fed.nes@mail.com", "diane.dior@mail.com", "gloria.gerry@mail.com", "garnout.pinout@mail.com", "fury.mendez@mail.com", ];
 
 
@@ -18,27 +20,47 @@ const listaInvitati = ["deric.liz@mail.com", "mari.alv@mail.com", "jose.ferri@ma
 
     // debug
 
-    prova = "deric.liz@mail.com";    
+    prova = "carmine.kouli@mail.com";    
 
 
 
 // ciclare array
 
 for (let i = 0; i < listaInvitati.length; i++) {
-    const element = listaInvitati[i];
+
+    const mailInLista = listaInvitati[i];
     
-    console.log(element);
+    
+
+    // confronto dati array con dati input
+    
+    if (prova === mailInLista) {
+        // se c'è corrispondeza
+        
+        inLista = i;
+
+
+        if (inLista >= 0) {
+            // output corrispondenza
+    
+    
+            // debug
+            console.log("vero");
+    
+        }
+    } 
+    
 }
 
 
 
-    // confronto dati input con dati array
+// se non c'è corrispondeza
+if (inLista === -1) {
+    console.log("false");
+}
 
 
-        // se c'è corrispondeza output messaggio nella pagina
 
-
-        // se non c'è corrispondenza output alert
 
 
 
