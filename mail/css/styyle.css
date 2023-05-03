@@ -9,5 +9,22 @@
  }
 
 
+/******
+ *MAIN*
+ ******/
+
+#container {
+   text-align: center;
+   background-color: aquamarine;
+   height: 100vh;
+}
+
+#container > h2 {
+   font-size: 24px;
+   color: rgb(70, 107, 33);
+   padding: 50px;
+}
+
+
 
  
