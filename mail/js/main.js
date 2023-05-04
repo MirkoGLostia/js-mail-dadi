@@ -50,22 +50,20 @@ submit.onclick = function() {
 
                 document.getElementById("positive-message").innerText = messageCont;
 
-        
-        
+                
                 // debug
                 // Congratulations, you are invited to the best party ever!!!!
                 console.log("vero");
-        
+                
             }
         } 
         
     }
-
-
-
+    
+    
+    
     // se non c'è corrispondeza output messaggio
     if (inLista === -1) {
-        
         alert ("you are not invited");
     }
 }
